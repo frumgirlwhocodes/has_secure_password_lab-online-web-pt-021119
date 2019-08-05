@@ -13,8 +13,9 @@ class UsersController < ApplicationController
      session[:user_id]=@user.id 
      redirect_to user_path(@user)
    else 
-  
+  render 'sessions/login'
   end
+end 
  
   private
  
